@@ -1,0 +1,35 @@
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.52 134.35" id="lp-ui-logo-header" role="img">
+    <title>AOL</title>
+    <defs>
+      <style>
+        .aol-logo{
+            fill:#231f20;
+        }
+        @media screen and (-ms-high-contrast: active) {
+          .aol-logo{
+            fill: green;
+          }
+        }
+        /* black text on white background */
+        @media screen and (-ms-high-contrast: black-on-white) {
+           .aol-logo{
+            fill: #333;
+          }
+        }
+        /* black text on white background */
+        @media screen and (-ms-high-contrast: white-on-black) {
+         .aol-logo{
+            fill: #efefef;
+          }
+        }
+      </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="canvas">
+        <rect class="aol-logo" x="254.5" width="29.78" height="131.58"/>
+        <path class="aol-logo" d="M185,29.44C149.22,29.44,132,57.72,132,81.9s17.17,52.45,52.92,52.45S237.9,106.08,237.9,81.9,220.72,29.44,185,29.44Zm0,77.35c-12.74,0-23.54-10.5-23.54-24.89S172.23,57,185,57s23.54,10.48,23.54,24.89S197.72,106.79,185,106.79Z"/>
+        <path class="aol-logo" d="M78.34,0H51.84L0,131.58H35.12l7-19H87.78l6.4,19h35.47Zm-27,85.88L65.09,40,78.87,85.88Z"/>
+        <circle class="aol-logo" cx="319.71" cy="112.75" r="19.81"/>
+      </g>
+    </g>
+  </svg>

@@ -1,0 +1,18 @@
+User-agent: *
+
+Disallow: /
+
+Disallow: /index_files/
+
+Disallow: /a2/
+
+Disallow: /g5/
+Disallow: /o1/
+Disallow: /o4/
+Disallow: /o6/
+Disallow: /y3/
+
+
+
+
+

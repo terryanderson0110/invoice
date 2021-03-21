@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://sns-login-screen.comet.aol.com/ -->
+<html class="new ad-300x600-activated ad-300x600-collapsed ad-1024x871-deactivated all-ads-collapsed" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+          
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta name="p:domain_verify" content="96bae1739d3231d21abe59a638021d5d">
+      <meta name="referrer" content="unsafe-url">
+
+                    <title>AOL.com</title>
+                              <meta name="description" content="Discover the latest breaking news in the U.S. and around the world — politics, weather, entertainment, lifestyle, finance, sports and much more.">
+                                        <meta name="author" content="AOL">
+                                        <meta property="og:type" content="website">
+                                        <meta property="og:image" content="https://www.aol.com/assets/images/favicon/og-image.png">
+                                        <meta property="og:image:width" content="1200">
+                                        <meta property="og:image:height" content="630">
+                                        <meta property="og:site_name" content="AOL.com">
+                                                          <meta property="og:app_id" content="183146218394780">
+                                        <meta property="fb:app_id" content="183146218394780">
+                                        <meta property="twitter:account_id" content="66237835">
+                                        <meta rel="publisher" content="115771908788438436647">
+                                        <meta name="robots" content="index,follow">
+                                          
+                      <link href="./sns-grid.css" rel="stylesheet">
+      
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  body {
+    background: #f7f7f7;
+  }
+
+  /* Debugging */
+  html.debug .ad-container {
+    border: 1px red solid;
+  }
+
+  /* Ad container and states */
+  .ad-container {
+    display: none;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    position: relative;
+    z-index: 1;
+  }
+  .ad-activated {
+    display: block;
+  }
+  .ad-deactivated {
+    display: none !important;
+  }
+  .ad-loading {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /* Ad sizes */
+  .ad-300x600 {
+    z-index: 2;
+    /*margin-left: -480px;*/
+    top: 80px;
+    float: left;
+  }
+/*  @media screen and (min-height: 660px) {
+    .ad-300x600 {
+      position: fixed;
+      top: 50%;
+      margin-top: -300px;
+    }
+  }*/
+  .ad-1200x800 {
+    position: absolute;
+    left: 50%;
+    width: 1200px;
+    height: 800px;
+    top: 0;
+    margin-left: -600px;
+  }
+  .ad-1024x871 {
+    position: absolute;
+    /*width: 1024px;
+    height: 871px;*/
+    left: 50%;
+    top: 0;
+    margin-left: -512px;
+  }
+
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1440px;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .top-stories {
+    display: none;
+    min-height: 500px;
+    padding-top: 80px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 330px;
+    box-sizing: border-box;
+    position: relative;
+  }
+    .top-stories .inner {
+      /*border: 1px blue solid;*/
+      /*background: #c9c9c9;*/
+      width: 100%;
+    }
+  .footer-ad {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 4999;
+  }
+    .footer-ad .ad-container {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  .login {
+    top: 140px;
+    /*left: 50%;*/
+    /*margin-left: 190px;/*200px;*/
+    width: 295px;
+    height: 466px;
+    border: 1px green solid;
+    background: #c9c9c9;
+    /*float: right;*/
+    z-index: 10;
+    visibility: hidden;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .login {
+      position: absolute;
+      right: 30px;
+    }
+    .top-stories {
+      /*display: block;*/
+      min-height: 700px;
+    }
+    html.ad-300x600-activated.ad-300x600-expanded .top-stories {
+      display: block;
+      padding-left: 330px;
+    }
+    html.all-ads-collapsed .top-stories {
+      display: block;
+    }
+    html.ad-1200x800-activated.ad-1200x800-expanded .wrap {
+      height: 820px;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .login {
+      right: auto;
+      left: 50%;
+      margin-left: 390px;
+    }
+    .top-stories .inner {
+      max-width: 720px;
+    }
+  }
+
+  @media only screen and (max-width: 1275px) {
+    /* limit top stories to 4 items on smaller screens */
+    .bon-embedded-cw .bon-grid-item.module-stories-we-love .subitem:nth-child(1n+5) {
+      display: none;
+    }
+  }
+
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+      .top-stories {
+        padding-top: 185px;
+      }
+  }
+
+  @media only screen and (max-width: 999px) {
+    .login {
+      right: auto;
+      left: 50%;
+      margin-left: 15px;
+      display: none;
+    }
+    .top-stories {
+      display: none;
+    }
+    .ad-1024x871 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: 0;
+    }
+    .ad-300x600 {
+      position: absolute;
+      left: 50%;
+      margin-left: -315px;
+    }
+    html.ad-300x600-activated.ad-300x600-expanded .top-stories {
+      display: none;
+    }
+    html.ad-300x600-activated.ad-300x600-collapsed .top-stories {
+      position: absolute;
+      left: 50%;
+      margin-left: -315px;
+      display: block;
+      width: 300px;
+      padding-right: 0;
+    }
+    html.ad-300x600-activated.ad-300x600-collapsed .top-stories .inner {
+      width: 300px;
+    }
+    html.all-ads-collapsed .top-stories {
+      display: block;
+    }
+    html.ad-1024x871-activated.ad-1024x871-expanded .wrap {
+      height: 871px;
+    }
+  }
+
+  html.ad-1024x871-activated.ad-1024x871-expanded {
+    min-height: 871px;
+  }
+
+  @media only screen and (max-width: 640px) {
+    .login {
+      display: none;
+    }
+    .ad-container {
+      display: none;
+    }
+    .top-stories {
+      display: none;
+    }
+  }
+
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px)
+{
+  .login {
+    display: none;
+  }
+  .ad-container {
+    display: none;
+  }
+  .top-stories {
+    display: none;
+  }
+  .wrap {
+  display: none;
+  }
+
+  .footer-ad {
+    height: 70px;
+  }
+    .footer-ad .ad-container {
+      display: block;
+    }
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .footer-ad .ad-container {
+      display: block;
+    }
+  }
+
+  /* Tablet */
+  @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+    .ad-1024x871 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: 0;
+    }
+  }
+</style>
+
+      
+              <script src="./adsWrapper.js.download"></script>
+      
+      <script src="./omniture.min.js.download"></script><script src="./beacon.min.js.download"></script></head>
+
+  <body data-module="page" id="body">
+
+  
+        
+  <div class="footer-ad">
+    <div class="ad-container desktop-only ad-deactivated" data-ad-number="963854041" data-min-width="320" data-max-width="768" data-sizes="320x50"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="ad-container desktop-only ad-activated ad-initialized ad-loaded ad-collapsed ad-300x600 ad-timeout" data-ad-number="963853171" data-min-width="1000" data-sizes="300x600,1200x800" id="adsDiv0"><iframe itemscope="" itemtype="https://schema.org/WPAdBlock" width="300" height="600" title="Ad" marginwidth="0" marginheight="0" allowtransparency="true" frameborder="0" scrolling="no" id="atwAdFrame0" name="atwAdFrame0" style="" banid="" src="./saved_resource(1).html"></iframe><div id="atwAdFrame0EAN" style="width: 0px; height: 15px; top: 0px; left: 0px; margin: 0px auto; position: relative;"><a id="atwAdFrame0EANA" style="position:absolute;right:0px;z-index:4999;margin:0 auto;width:77px;height:15px" href="http://adinfo.aol.com/" target="_blank"><img src="https://o.aolcdn.com/ads/adchoices.png" style="border: none; width: 77px; height: 15px; vertical-align: top; display: none !important;" alt="AdChoices"></a></div></div>
+    <div class="ad-container ad-1024x871 ad-deactivated" data-ad-number="963853185" data-ad-number-tablet="93413163" data-min-width="768" data-max-width="1000" data-width="1024" data-height="871"></div>
+    <div class="top-stories">
+      <div class="inner">
+                                    <div class="bon-embedded-cw"> <div class="bon-grid-item sns-login-screen module-stories-we-love template template-sns-login-screen" data-id="2004370" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;bsns_stories_we_love_login_screen_1&quot;,&quot;plid&quot;:&quot;969134280&quot;,&quot;mpos&quot;:&quot;cw_full_100&quot;,&quot;msiz&quot;:&quot;&quot;}}" data-metrics="{&quot;available&quot;:&quot;&quot;,&quot;age&quot;:&quot;446d3h44m&quot;,&quot;permitted&quot;:&quot;false&quot;,&quot;metrics-details-visible&quot;:&quot;false&quot;}" data-main-channel="sns"> <h3>TOP STORIES ON AOL.com</h3> <div class="subitems"> <div class="subitem"> <a class="link-out" target="_blank" href="https://www.aol.com/article/news/2018/01/19/us-government-shutdown-looms-senate-short-of-votes-for-spending-bill/23338590/" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;sec1_lnk1_1&quot;}}"> <div class="title" data-title-short="Pelosi points blame at &#39;incompetent&#39; GOP for sh..."> Pelosi points blame at 'incompetent' GOP for shutdown </div> <div class="read-more">Read now</div> </a> </div> <div class="subitem"> <a class="link-out" target="_blank" href="https://www.aol.com/article/news/2018/01/20/heres-what-happens-to-social-security-and-disability-benefits-during-a-government-shutdown/23338721/" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;sec1_lnk2_2&quot;}}"> <div class="title" data-title-short="Shutdown&#39;s impact on Social Security checks rev..."> Shutdown's impact on Social Security checks revealed </div> <div class="read-more">Read now</div> </a> </div> <div class="subitem"> <a class="link-out" target="_blank" href="https://www.aol.com/article/news/2018/01/20/pence-starts-middle-east-tour-in-egypt-pledges-shoulder-to-shoulder-support/23338859/" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;sec1_lnk3_3&quot;}}"> <div class="title" data-title-short="Pence: US, Egypt stand &#39;shoulder to shoulder&#39; o..."> Pence: US, Egypt stand 'shoulder to shoulder' on terror </div> <div class="read-more">Read now</div> </a> </div> <div class="subitem"> <a class="link-out" target="_blank" href="https://www.aol.com/article/news/2018/01/20/nikki-haley-reportedly-told-african-ambassadors-she-regretted-controversy-surrounding-trumps-s-hole-remark/23338799/" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;sec1_lnk4_4&quot;}}"> <div class="title" data-title-short="Report: Haley tells officials she regrets &#39;shit..."> Report: Haley tells officials she regrets 'shithole' comments </div> <div class="read-more">Read now</div> </a> </div> <div class="subitem"> <a class="link-out" target="_blank" href="https://www.aol.com/article/news/2018/01/20/womens-march-aims-to-harness-trump-opposition/23338719/" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;sec1_lnk5_5&quot;}}"> <div class="title" data-title-short="Protesters take to the streets to &#39;make our mes..."> Protesters take to the streets to 'make our message heard' </div> <div class="read-more">Read now</div> </a> </div> </div> </div> </div>
+                          </div>
+    </div>
+  </div>
+
+  <div class="login"></div>
+
+
+          <script src="./jquery-1.12.0.min.js.download"></script>
+  <script>
+  function checkNested(obj) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    for (var i = 0; i < args.length; i++) {
+      if (!obj || !obj.hasOwnProperty(args[i])) {
+        return false;
+      }
+      obj = obj[args[i]];
+    }
+    return true;
+  };
+
+  function fetchBeacons() {
+    var plidsArr = [],
+        $scope = $('[data-beacon]:visible');
+    $scope.each(function(){
+      var data = $(this).data('beacon');
+      // Check to make sure object 'p' contains properties [mnid, plid]
+      if(checkNested(data, 'p', 'mnid') && checkNested(data, 'p', 'plid')){
+        var val = data.p.plid + '|' + data.p.mnid.replace(/^\s+|\s+$/, '');
+        // Push unique tracking into array
+        if(plidsArr.indexOf(val) === -1){
+          plidsArr.push(val);
+        }
+      }
+    });
+    return plidsArr.join();
+  }
+
+  var s_account = "aolsvc";
+
+</script>
+  <script>
+/*! iFrame Resizer (iframeSizer.contentWindow.min.js) - v3.5.5 - 2016-06-16
+ *  Desc: Include this file in any page being loaded into an iframe
+ *        to force the iframe to resize to the content size.
+ *  Requires: iframeResizer.min.js on host page.
+ *  Copyright: (c) 2016 David J. Bradshaw - dave@bradshaw.net
+ *  License: MIT
+ */
+!function(a,b){"use strict";function c(b,c,d){"addEventListener"in a?b.addEventListener(c,d,!1):"attachEvent"in a&&b.attachEvent("on"+c,d)}function d(b,c,d){"removeEventListener"in a?b.removeEventListener(c,d,!1):"detachEvent"in a&&b.detachEvent("on"+c,d)}function e(a){return a.charAt(0).toUpperCase()+a.slice(1)}function f(a){var b,c,d,e=null,f=0,g=function(){f=Ha(),e=null,d=a.apply(b,c),e||(b=c=null)};return function(){var h=Ha();f||(f=h);var i=ya-(h-f);return b=this,c=arguments,0>=i||i>ya?(e&&(clearTimeout(e),e=null),f=h,d=a.apply(b,c),e||(b=c=null)):e||(e=setTimeout(g,i)),d}}function g(a){return na+"["+pa+"] "+a}function h(b){ma&&"object"==typeof a.console&&console.log(g(b))}function i(b){"object"==typeof a.console&&console.warn(g(b))}function j(){k(),h("Initialising iFrame ("+location.href+")"),l(),o(),n("background",X),n("padding",_),B(),t(),u(),p(),D(),v(),ja=C(),O("init","Init message from host page"),Ea()}function k(){function a(a){return"true"===a?!0:!1}var c=ia.substr(oa).split(":");pa=c[0],Y=b!==c[1]?Number(c[1]):Y,aa=b!==c[2]?a(c[2]):aa,ma=b!==c[3]?a(c[3]):ma,ka=b!==c[4]?Number(c[4]):ka,V=b!==c[6]?a(c[6]):V,Z=c[7],ga=b!==c[8]?c[8]:ga,X=c[9],_=c[10],va=b!==c[11]?Number(c[11]):va,ja.enable=b!==c[12]?a(c[12]):!1,ra=b!==c[13]?c[13]:ra,Ba=b!==c[14]?c[14]:Ba}function l(){function b(){var b=a.iFrameResizer;h("Reading data from page: "+JSON.stringify(b)),Da="messageCallback"in b?b.messageCallback:Da,Ea="readyCallback"in b?b.readyCallback:Ea,ua="targetOrigin"in b?b.targetOrigin:ua,ga="heightCalculationMethod"in b?b.heightCalculationMethod:ga,Ba="widthCalculationMethod"in b?b.widthCalculationMethod:Ba}function c(a,b){return"function"==typeof a&&(h("Setup custom "+b+"CalcMethod"),Ga[b]=a,a="custom"),a}"iFrameResizer"in a&&Object===a.iFrameResizer.constructor&&(b(),ga=c(ga,"height"),Ba=c(Ba,"width")),h("TargetOrigin for parent set to: "+ua)}function m(a,b){return-1!==b.indexOf("-")&&(i("Negative CSS value ignored for "+a),b=""),b}function n(a,c){b!==c&&""!==c&&"null"!==c&&(document.body.style[a]=c,h("Body "+a+' set to "'+c+'"'))}function o(){b===Z&&(Z=Y+"px"),n("margin",m("margin",Z))}function p(){document.documentElement.style.height="",document.body.style.height="",h('HTML & body height set to "auto"')}function q(b){function f(){O(b.eventName,b.eventType)}var g={add:function(b){c(a,b,f)},remove:function(b){d(a,b,f)}};b.eventNames&&Array.prototype.map?(b.eventName=b.eventNames[0],b.eventNames.map(g[b.method])):g[b.method](b.eventName),h(e(b.method)+" event listener: "+b.eventType)}function r(a){q({method:a,eventType:"Animation Start",eventNames:["animationstart","webkitAnimationStart"]}),q({method:a,eventType:"Animation Iteration",eventNames:["animationiteration","webkitAnimationIteration"]}),q({method:a,eventType:"Animation End",eventNames:["animationend","webkitAnimationEnd"]}),q({method:a,eventType:"Input",eventName:"input"}),q({method:a,eventType:"Mouse Up",eventName:"mouseup"}),q({method:a,eventType:"Mouse Down",eventName:"mousedown"}),q({method:a,eventType:"Orientation Change",eventName:"orientationchange"}),q({method:a,eventType:"Print",eventName:["afterprint","beforeprint"]}),q({method:a,eventType:"Ready State Change",eventName:"readystatechange"}),q({method:a,eventType:"Touch Start",eventName:"touchstart"}),q({method:a,eventType:"Touch End",eventName:"touchend"}),q({method:a,eventType:"Touch Cancel",eventName:"touchcancel"}),q({method:a,eventType:"Transition Start",eventNames:["transitionstart","webkitTransitionStart","MSTransitionStart","oTransitionStart","otransitionstart"]}),q({method:a,eventType:"Transition Iteration",eventNames:["transitioniteration","webkitTransitionIteration","MSTransitionIteration","oTransitionIteration","otransitioniteration"]}),q({method:a,eventType:"Transition End",eventNames:["transitionend","webkitTransitionEnd","MSTransitionEnd","oTransitionEnd","otransitionend"]}),"child"===ra&&q({method:a,eventType:"IFrame Resized",eventName:"resize"})}function s(a,b,c,d){return b!==a&&(a in c||(i(a+" is not a valid option for "+d+"CalculationMethod."),a=b),h(d+' calculation method set to "'+a+'"')),a}function t(){ga=s(ga,fa,Ia,"height")}function u(){Ba=s(Ba,Aa,Ja,"width")}function v(){!0===V?(r("add"),G()):h("Auto Resize disabled")}function w(){h("Disable outgoing messages"),sa=!1}function x(){h("Remove event listener: Message"),d(a,"message",T)}function y(){null!==$&&$.disconnect()}function z(){r("remove"),y(),clearInterval(la)}function A(){w(),x(),!0===V&&z()}function B(){var a=document.createElement("div");a.style.clear="both",a.style.display="block",document.body.appendChild(a)}function C(){function d(){return{x:a.pageXOffset!==b?a.pageXOffset:document.documentElement.scrollLeft,y:a.pageYOffset!==b?a.pageYOffset:document.documentElement.scrollTop}}function e(a){var b=a.getBoundingClientRect(),c=d();return{x:parseInt(b.left,10)+parseInt(c.x,10),y:parseInt(b.top,10)+parseInt(c.y,10)}}function f(a){function c(a){var b=e(a);h("Moving to in page link (#"+d+") at x: "+b.x+" y: "+b.y),S(b.y,b.x,"scrollToOffset")}var d=a.split("#")[1]||a,f=decodeURIComponent(d),g=document.getElementById(f)||document.getElementsByName(f)[0];b!==g?c(g):(h("In page link (#"+d+") not found in iFrame, so sending to parent"),S(0,0,"inPageLink","#"+d))}function g(){""!==location.hash&&"#"!==location.hash&&f(location.href)}function j(){function a(a){function b(a){a.preventDefault(),f(this.getAttribute("href"))}"#"!==a.getAttribute("href")&&c(a,"click",b)}Array.prototype.forEach.call(document.querySelectorAll('a[href^="#"]'),a)}function k(){c(a,"hashchange",g)}function l(){setTimeout(g,ca)}function m(){Array.prototype.forEach&&document.querySelectorAll?(h("Setting up location.hash handlers"),j(),k(),l()):i("In page linking not fully supported in this browser! (See README.md for IE8 workaround)")}return ja.enable?m():h("In page linking not enabled"),{findTarget:f}}function D(){h("Enable public methods"),Ca.parentIFrame={autoResize:function(a){return!0===a&&!1===V?(V=!0,v()):!1===a&&!0===V&&(V=!1,z()),V},close:function(){S(0,0,"close"),A()},getId:function(){return pa},getPageInfo:function(a){"function"==typeof a?(Fa=a,S(0,0,"pageInfo")):(Fa=function(){},S(0,0,"pageInfoStop"))},moveToAnchor:function(a){ja.findTarget(a)},reset:function(){R("parentIFrame.reset")},scrollTo:function(a,b){S(b,a,"scrollTo")},scrollToOffset:function(a,b){S(b,a,"scrollToOffset")},sendMessage:function(a,b){S(0,0,"message",JSON.stringify(a),b)},setHeightCalculationMethod:function(a){ga=a,t()},setWidthCalculationMethod:function(a){Ba=a,u()},setTargetOrigin:function(a){h("Set targetOrigin: "+a),ua=a},size:function(a,b){var c=""+(a?a:"")+(b?","+b:"");O("size","parentIFrame.size("+c+")",a,b)}}}function E(){0!==ka&&(h("setInterval: "+ka+"ms"),la=setInterval(function(){O("interval","setInterval: "+ka)},Math.abs(ka)))}function F(){function c(a){function b(a){!1===a.complete&&(h("Attach listeners to "+a.src),a.addEventListener("load",g,!1),a.addEventListener("error",i,!1),l.push(a))}"attributes"===a.type&&"src"===a.attributeName?b(a.target):"childList"===a.type&&Array.prototype.forEach.call(a.target.querySelectorAll("img"),b)}function d(a){l.splice(l.indexOf(a),1)}function e(a){h("Remove listeners from "+a.src),a.removeEventListener("load",g,!1),a.removeEventListener("error",i,!1),d(a)}function f(a,c,d){e(a.target),O(c,d+": "+a.target.src,b,b)}function g(a){f(a,"imageLoad","Image loaded")}function i(a){f(a,"imageLoadFailed","Image load failed")}function j(a){O("mutationObserver","mutationObserver: "+a[0].target+" "+a[0].type),a.forEach(c)}function k(){var a=document.querySelector("body"),b={attributes:!0,attributeOldValue:!1,characterData:!0,characterDataOldValue:!1,childList:!0,subtree:!0};return n=new m(j),h("Create body MutationObserver"),n.observe(a,b),n}var l=[],m=a.MutationObserver||a.WebKitMutationObserver,n=k();return{disconnect:function(){"disconnect"in n&&(h("Disconnect body MutationObserver"),n.disconnect(),l.forEach(e))}}}function G(){var b=0>ka;a.MutationObserver||a.WebKitMutationObserver?b?E():$=F():(h("MutationObserver not supported in this browser!"),E())}function H(a,b){function c(a){var c=/^\d+(px)?$/i;if(c.test(a))return parseInt(a,W);var d=b.style.left,e=b.runtimeStyle.left;return b.runtimeStyle.left=b.currentStyle.left,b.style.left=a||0,a=b.style.pixelLeft,b.style.left=d,b.runtimeStyle.left=e,a}var d=0;return b=b||document.body,"defaultView"in document&&"getComputedStyle"in document.defaultView?(d=document.defaultView.getComputedStyle(b,null),d=null!==d?d[a]:0):d=c(b.currentStyle[a]),parseInt(d,W)}function I(a){a>ya/2&&(ya=2*a,h("Event throttle increased to "+ya+"ms"))}function J(a,b){for(var c=b.length,d=0,f=0,g=e(a),i=Ha(),j=0;c>j;j++)d=b[j].getBoundingClientRect()[a]+H("margin"+g,b[j]),d>f&&(f=d);return i=Ha()-i,h("Parsed "+c+" HTML elements"),h("Element position calculated in "+i+"ms"),I(i),f}function K(a){return[a.bodyOffset(),a.bodyScroll(),a.documentElementOffset(),a.documentElementScroll()]}function L(a,b){function c(){return i("No tagged elements ("+b+") found on page"),ea}var d=document.querySelectorAll("["+b+"]");return 0===d.length?c():J(a,d)}function M(){return document.querySelectorAll("body *")}function N(a,c,d,e){function f(){ea=m,za=n,S(ea,za,a)}function g(){function a(a,b){var c=Math.abs(a-b)<=va;return!c}return m=b!==d?d:Ia[ga](),n=b!==e?e:Ja[Ba](),a(ea,m)||aa&&a(za,n)}function i(){return!(a in{init:1,interval:1,size:1})}function j(){return ga in qa||aa&&Ba in qa}function k(){h("No change in size detected")}function l(){i()&&j()?R(c):a in{interval:1}||k()}var m,n;g()||"init"===a?(P(),f()):l()}function O(a,b,c,d){function e(){a in{reset:1,resetPage:1,init:1}||h("Trigger event: "+b)}function f(){return wa&&a in ba}f()?h("Trigger event cancelled: "+a):(e(),Ka(a,b,c,d))}function P(){wa||(wa=!0,h("Trigger event lock on")),clearTimeout(xa),xa=setTimeout(function(){wa=!1,h("Trigger event lock off"),h("--")},ca)}function Q(a){ea=Ia[ga](),za=Ja[Ba](),S(ea,za,a)}function R(a){var b=ga;ga=fa,h("Reset trigger event: "+a),P(),Q("reset"),ga=b}function S(a,c,d,e,f){function g(){b===f?f=ua:h("Message targetOrigin: "+f)}function i(){var g=a+":"+c,i=pa+":"+g+":"+d+(b!==e?":"+e:"");h("Sending message to host page ("+i+")"),ta.postMessage(na+i,f)}!0===sa&&(g(),i())}function T(b){function d(){return na===(""+b.data).substr(0,oa)}function e(){function d(){ia=b.data,ta=b.source,j(),da=!1,setTimeout(function(){ha=!1},ca)}document.body?d():(h("Waiting for page ready"),c(a,"readystatechange",e))}function f(){ha?h("Page reset ignored by init"):(h("Page size reset by host page"),Q("resetPage"))}function g(){O("resizeParent","Parent window requested size check")}function k(){var a=m();ja.findTarget(a)}function l(){return b.data.split("]")[1].split(":")[0]}function m(){return b.data.substr(b.data.indexOf(":")+1)}function n(){return"iFrameResize"in a}function o(){var a=m();h("MessageCallback called from parent: "+a),Da(JSON.parse(a)),h(" --")}function p(){var a=m();h("PageInfoFromParent called from parent: "+a),Fa(JSON.parse(a)),h(" --")}function q(){return b.data.split(":")[2]in{"true":1,"false":1}}function r(){switch(l()){case"reset":f();break;case"resize":g();break;case"inPageLink":case"moveToAnchor":k();break;case"message":o();break;case"pageInfo":p();break;default:n()||q()||i("Unexpected message ("+b.data+")")}}function s(){!1===da?r():q()?e():h('Ignored message of type "'+l()+'". Received before initialization.')}d()&&s()}function U(){"loading"!==document.readyState&&a.parent.postMessage("[iFrameResizerChild]Ready","*")}var V=!0,W=10,X="",Y=0,Z="",$=null,_="",aa=!1,ba={resize:1,click:1},ca=128,da=!0,ea=1,fa="bodyOffset",ga=fa,ha=!0,ia="",ja={},ka=32,la=null,ma=!1,na="[iFrameSizer]",oa=na.length,pa="",qa={max:1,min:1,bodyScroll:1,documentElementScroll:1},ra="child",sa=!0,ta=a.parent,ua="*",va=0,wa=!1,xa=null,ya=16,za=1,Aa="scroll",Ba=Aa,Ca=a,Da=function(){i("MessageCallback function not defined")},Ea=function(){},Fa=function(){},Ga={height:function(){return i("Custom height calculation function not defined"),document.documentElement.offsetHeight},width:function(){return i("Custom width calculation function not defined"),document.body.scrollWidth}},Ha=Date.now||function(){return(new Date).getTime()},Ia={bodyOffset:function(){return document.body.offsetHeight+H("marginTop")+H("marginBottom")},offset:function(){return Ia.bodyOffset()},bodyScroll:function(){return document.body.scrollHeight},custom:function(){return Ga.height()},documentElementOffset:function(){return document.documentElement.offsetHeight},documentElementScroll:function(){return document.documentElement.scrollHeight},max:function(){return Math.max.apply(null,K(Ia))},min:function(){return Math.min.apply(null,K(Ia))},grow:function(){return Ia.max()},lowestElement:function(){return Math.max(Ia.bodyOffset(),J("bottom",M()))},taggedElement:function(){return L("bottom","data-iframe-height")}},Ja={bodyScroll:function(){return document.body.scrollWidth},bodyOffset:function(){return document.body.offsetWidth},custom:function(){return Ga.width()},documentElementScroll:function(){return document.documentElement.scrollWidth},documentElementOffset:function(){return document.documentElement.offsetWidth},scroll:function(){return Math.max(Ja.bodyScroll(),Ja.documentElementScroll())},max:function(){return Math.max.apply(null,K(Ja))},min:function(){return Math.min.apply(null,K(Ja))},rightMostElement:function(){return J("right",M())},taggedElement:function(){return L("right","data-iframe-width")}},Ka=f(N);c(a,"message",T),U()}(window||{});
+</script>
+
+<script>
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate)
+          func.apply(context, args);
+        };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow)
+        func.apply(context, args);
+      };
+  };
+
+  function fireBeacons() {
+    (function(){
+      bN_cfg = {
+        h: location.hostname,
+        b: "b.aol.com",
+        p: {
+          'dL_ch':    'us.aolportal',
+          'dL_dpt':   'ssologin',
+          'dL_sDpt':  '',
+          'cms_src':  'us-aol.com',
+          "plids"     : fetchBeacons()
+        },
+        view: 0,
+        upgradeIE: false
+      };
+    })();
+
+    (function(d){
+      var s=d.createElement("script"),
+      h=d.getElementsByTagName("head")[0];
+      s.src="https://s.aolcdn.com/os/aol/omniture.min.js";
+      h.appendChild(s);
+    })(document);
+
+    (function(d){
+      var s=d.createElement("script"),
+      h=d.getElementsByTagName("head")[0];
+      s.src="https://s.aolcdn.com/os/aol/beacon.min.js";
+      h.appendChild(s);
+    })(document);
+  };
+
+  var bonSnsAdWaterfall = new function() {
+    var self = this;
+
+    this.init = function() {
+      if ($('.ad-container').length) {
+        self.setup();
+      }
+
+      this.fireBeacons();
+    };
+
+    this.fireBeacons = function() {
+      var intervalCount = 0;
+      var intervalDelay = 100;
+      var maxInterval = 50; // 5sec
+      var interval = setInterval(function() {
+        intervalCount++;
+        if (intervalCount > maxInterval) {
+          fireBeacons();
+          clearInterval(interval);
+        }
+        // Do we need to wait for any ads to load?
+        if ($('.ad-activated').length) {
+          // Have ads finished loading?
+          if ($('.ad-activated').length == $('.ad-activated.ad-loaded').length) {
+            fireBeacons();
+            clearInterval(interval);
+          }
+        } else {
+          fireBeacons();
+          clearInterval(interval);
+        }
+      }, intervalDelay);
+    };
+
+    this.setup = function() {
+      self.refreshLayoutDebounced = self.refreshLayout;//debounce(self.refreshLayout, 150);
+
+      $(window).resize(self.initializeAds);
+
+      self.waitForPageHeightChanges();
+      self.initializeAds();
+
+      setTimeout(self.refreshLayout, 4000);
+    };
+
+    this.waitForPageHeightChanges = function() {
+      var lastHeight = -1;
+      var intervalDelay = 150;
+      var interval = setInterval(function() {
+        var contentHeight = $(document).height();
+        if (contentHeight != lastHeight) {
+          lastHeight = contentHeight;
+
+          if (typeof parentIFrame !== 'undefined' && typeof parentIFrame.size !== 'undefined') {
+            parentIFrame.size(contentHeight);
+          }
+        }
+      }, intervalDelay);
+    };
+
+    this.isTablet = function() {
+      return navigator.userAgent.match(/Tablet|iPad/i);
+    };
+
+    this.refreshLayout = function() {
+      //console.log("ref layout");
+      var $container = $('html');
+      var adStates = ['activated', 'deactivated', 'expanded', 'collapsed'];
+      var classNames = [];
+
+      $('.ad-container').each(function(i, o) {
+        var $adDiv = $(o);
+        var width = $adDiv.data('width');
+        var height = $adDiv.data('height');
+
+        if (!width || !height) {
+          width = $adDiv.find('iframe').width();
+          height = $adDiv.find('iframe').height();
+        }
+
+        if (width && height) {
+          var classPrefix = 'ad-' + width + 'x' + height;
+
+          for (var i in adStates) {
+            var state = adStates[i];
+
+            if ($adDiv.hasClass('ad-' + state)) {
+              classNames.push(classPrefix + '-' + state);
+            }
+          }
+        }
+
+        $container.attr('class', 'new ' + classNames.join(' '));
+      });
+
+      if ($('.ad-container.ad-activated').length == $('.ad-container.ad-activated.ad-loaded.ad-collapsed').length) {
+        $('html').addClass('all-ads-collapsed');
+      } else {
+        $('html').removeClass('all-ads-collapsed');
+      }
+
+      //setTimeout(function() {
+      //  if (typeof parentIFrame !== 'undefined' && typeof parentIFrame.size !== 'undefined') {
+      //    var pageHeight = $('html').height();
+      //    parentIFrame.size(pageHeight);
+      //  }
+      //}, 50);
+    };
+
+    this.initializeAds = function() {
+      $('.ad-container').each(function(i, adDiv) {
+        self.initializeAd(adDiv);
+        self.refreshLayoutDebounced();
+      });
+    };
+
+    this.initializeAd = function($adDiv) {
+      $adDiv = $($adDiv);
+      var winWidth = $(window).width();
+      var adNumber = $adDiv.data('ad-number');
+      var adNumberTablet = $adDiv.data('ad-number-tablet');
+      var width = $adDiv.data('width');
+      var height = $adDiv.data('height');
+      var sizes = $adDiv.data('sizes');
+      var minWidth = $adDiv.data('min-width');
+      var maxWidth = $adDiv.data('max-width');
+      var activateAd = true;
+      var initializeAd = true;
+
+      if (!$adDiv.length) {
+        return;
+      }
+
+      if (self.isTablet() && adNumberTablet) {
+        adNumber = adNumberTablet;
+      }
+
+      if (self.isTablet() && $adDiv.hasClass('desktop-only')) {
+        return;
+      }
+
+      if (width && height) {
+        $adDiv.addClass('ad-' + width + 'x' + height);
+      }
+
+      // Has ad already ran?
+      if ($adDiv.hasClass('ad-initialized')) {
+        initializeAd = false;
+      }
+
+      // Breakpoint checks
+      if (minWidth && winWidth < minWidth) {
+        activateAd = false;
+      }
+
+      // hack for tablets
+      if (adNumber == "93413163") {
+        maxWidth = 1024;
+      }
+
+      if (maxWidth && winWidth > maxWidth) {
+        activateAd = false;
+      }
+
+      // Should ad be visible?
+      if (activateAd) {
+        self.activateAd($adDiv);
+
+        // Has ad already ran?
+        if (initializeAd) {
+          $adDiv.trigger('ad:initialized');
+          $adDiv.addClass('ad-initialized');
+
+          if (sizes) {
+            htmlAdWHDyn(adNumber, sizes, 'fileless', $adDiv[0]);
+          } else {
+            htmlAdWH(adNumber, width, height, 'fileless', $adDiv[0]);
+          }
+
+          self.waitForAdToLoad($adDiv);
+        }
+      } else {
+        self.deactivateAd($adDiv);
+      }
+    };
+
+    this.activateAd = function($adDiv) {
+      $adDiv = $($adDiv);
+
+      var width = $adDiv.data('width');
+      var height = $adDiv.data('height');
+
+      $adDiv.trigger('ad:activated');
+
+      $adDiv.addClass('ad-activated');
+      $adDiv.removeClass('ad-deactivated');
+
+      if (width && height) {
+        $('html').addClass('ad-' + width + 'x' + height + '-activated');
+        $('html').removeClass('ad-' + width + 'x' + height + '-deactivated');
+      }
+    };
+
+    this.deactivateAd = function($adDiv) {
+      $adDiv = $($adDiv);
+
+      var width = $adDiv.data('width');
+      var height = $adDiv.data('height');
+
+      $adDiv.trigger('ad:deactivated');
+
+      $adDiv.addClass('ad-deactivated');
+      $adDiv.removeClass('ad-activated');
+
+      if (width && height) {
+        //$('html').addClass('ad-' + width + 'x' + height + '-deactivated');
+        //$('html').removeClass('ad-' + width + 'x' + height + '-activated');
+      }
+    };
+
+    this.waitForAdToLoad = function($adDiv) {
+      $adDiv.trigger('ad:loading');
+      $adDiv.addClass('ad-loading');
+
+      var adNumber = $adDiv.data('ad-number');
+      var adNumberTablet = $adDiv.data('ad-number-tablet');
+      var intervalCount = 0;
+      var intervalDelay = 100;
+      var maxInterval = 60 * 2 * 10; // 2min ad timeout
+      var missCount =  0;
+
+      if (self.isTablet() && adNumberTablet) {
+        adNumber = adNumberTablet;
+      }
+
+      var interval = setInterval(function() {
+        intervalCount++;
+        if (intervalCount > maxInterval) {
+          clearInterval(interval);
+          self.onAdCollapsed($adDiv, true);
+        }
+
+        if (typeof adsDevilAd !== 'undefined' && typeof adsDevilAd.ad !== 'undefined') {
+          for (var i in adsDevilAd.ad) {
+            var adInfo = adsDevilAd.ad[i];
+
+            if (adInfo.mn == adNumber) {
+              if (parseInt(adInfo.width) > 0) {
+                if ($adDiv.find('iframe').height() > 0) {
+                  self.onAdExpanded($adDiv);
+                  clearInterval(interval);
+                }
+
+                missCount++;
+
+                if (missCount == 10) {
+                  self.onAdCollapsed($adDiv);
+                }
+              } else {
+                missCount++;
+
+                if (missCount == 10) {
+                  self.onAdCollapsed($adDiv);
+                }
+              }
+            }
+          }
+        }
+      }, intervalDelay);
+    };
+
+    this.onAdCollapsed = function($adDiv, timeoutOccurred) {
+      var width = $adDiv.data('width');
+      var height = $adDiv.data('height');
+      var sizes = $adDiv.data('sizes');
+
+      if ($adDiv.hasClass('ad-expanded')) {
+        return;
+      }
+
+      $adDiv.trigger('ad:loaded');
+      $adDiv.trigger('ad:collapsed');
+
+      $adDiv.addClass('ad-loaded');
+      $adDiv.addClass('ad-collapsed');
+
+      $adDiv.removeClass('ad-loading');
+      $adDiv.removeClass('ad-expanded');
+
+      if (timeoutOccurred) {
+        $adDiv.addClass('ad-timeout');
+      }
+
+      if (sizes) {
+        width = $adDiv.find('iframe').width();
+        height = $adDiv.find('iframe').height();
+      }
+
+      if (width && height) {
+        $adDiv.addClass('ad-' + width + 'x' + height);
+      }
+
+      self.refreshLayoutDebounced();
+    }
+
+    this.onAdExpanded = function($adDiv) {
+      var width = $adDiv.data('width');
+      var height = $adDiv.data('height');
+      var sizes = $adDiv.data('sizes');
+
+      $adDiv.trigger('ad:loaded');
+      $adDiv.trigger('ad:expanded');
+
+      $adDiv.addClass('ad-loaded ad-expanded');
+
+      $adDiv.removeClass('ad-collapsed');
+      $adDiv.removeClass('ad-loading');
+
+      if (sizes) {
+        width = $adDiv.find('iframe').width();
+        height = $adDiv.find('iframe').height();
+      }
+
+      $adDiv.addClass('ad-' + width + 'x' + height);
+
+      self.refreshLayoutDebounced();
+    };
+  }
+
+  $(document).ready(function() {
+    bonSnsAdWaterfall.init();
+  });
+</script>
+
+    
+
+<iframe id="atwLocalStorage" name="atwLocalStorage" itemscope="" itemtype="https://schema.org/WPAdBlock" src="./guid.html" style="display: none !important; width: 0px; height: 0px;"></iframe><iframe itemscope="" itemtype="https://schema.org/WPAdBlock" id="adTacFr" name="adTacFr" src="./tcode3.html" style="display: none !important; width: 0px; height: 0px;"></iframe><div style="clear: both; display: block;"></div></body></html>

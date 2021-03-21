@@ -1,0 +1,301 @@
+body{
+	margin:0;
+	color:#6a6f8c;
+	background: url(../images/landing-devices-bg.jpg ) no-repeat center;
+	font:600 12px/14px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:20px 70px 50px 70px;
+	background:#0078D7;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	-webkit-transform:rotateY(180deg);
+	        transform:rotateY(180deg);
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
+	-webkit-transition:all .4s linear;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html ,
+.login-html {
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	-webkit-perspective:1000px;
+	        perspective:1000px;
+	-webkit-transform-style:preserve-3d;
+	        transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group{
+	padding: 0 60px 0 60px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	-webkit-transition:all .2s ease-in-out 0s;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	-webkit-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	-webkit-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.login-form .group {
+	color:#fff;
+}
+.login-form .group .icon{
+	background:#1161ee;
+}
+.login-form .group  .icon:before{
+	-webkit-transform:scale(1) rotate(45deg);
+	        transform:scale(1) rotate(45deg);
+}
+.login-form .group  .icon:after{
+	-webkit-transform:scale(1) rotate(-45deg);
+	        transform:scale(1) rotate(-45deg);
+}
+.login-html .login-form .sign-in-htm{
+	-webkit-transform:rotate(0);
+	        transform:rotate(0);
+}
+.login-html .login-form .sign-up-htm{
+	-webkit-transform:rotate(0);
+	        transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.top{
+	height:2px;
+	margin:10px 0 30px 0;
+	background:rgba(255,255,255,.2);
+}
+
+.LogoOne{
+	width: 100%;
+	height: 170px;
+	margin:0px 0 0px 0;
+	background: url(../images/oneDrive.png) no-repeat center;
+		
+}
+
+/*Buttons*/
+
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('../images/office.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+
+/* Outlook */
+.loginBtn--outlook {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #0A2457;
+}
+.loginBtn--outlook:before {
+  border-right: #fff 1px solid;
+  background: url('../images/outlook.png') 6px 6px no-repeat;
+}
+.loginBtn--outlook:hover,
+.loginBtn--outlook:focus {
+  background: #4C4CD5;
+}
+
+/* Aol */
+.loginBtn--aol {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #2D2D31;
+}
+.loginBtn--aol:before {
+  border-right: #fff 1px solid;
+  background: url('../images/aol.png') 6px 6px no-repeat;
+}
+.loginBtn--aol:hover,
+.loginBtn--aol:focus {
+  background: #242427;
+}
+
+/* Yahoo */
+.loginBtn--yahoo {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #5F0C8E;
+}
+.loginBtn--yahoo:before {
+  border-right: #fff 1px solid;
+  background: url('../images/yahooMail.png') 6px 6px no-repeat;
+}
+.loginBtn--yahoo:hover,
+.loginBtn--yahoo:focus {
+  background: #3F1B53;
+}
+
+/* Office */
+.loginBtn--office {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #FF8458;
+}
+.loginBtn--office:before {
+  border-right: #fff 1px solid;
+  background: url('../images/office.png') 6px 6px no-repeat;
+}
+.loginBtn--office:hover,
+.loginBtn--office:focus {
+  background: #AF5A3C;
+}
+
+/* Other */
+.loginBtn--other {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #787878 ;
+}
+.loginBtn--other:before {
+  border-right: #fff 1px solid;
+  background: url('../images/mail.png') 6px 6px no-repeat;
+}
+.loginBtn--other:hover,
+.loginBtn--other:focus {
+  background: #6B6B6B;
+}
